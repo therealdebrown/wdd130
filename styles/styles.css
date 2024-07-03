@@ -16,7 +16,7 @@ nav {
 
 nav a{
     color: white;
-    display: block;
+    display: flexbox;
     padding: 20px;
 }
 
@@ -44,14 +44,14 @@ p {
     padding: 0;
 }
 
-div {
+/*div {
     width: 400px;
     margin: 10px;
     border: 1px solid #000000;
     padding: 15px;
     background-color: #247247;
     color: #ffffff;
-}
+}*/
 
 aside {
     width: 20rem;
