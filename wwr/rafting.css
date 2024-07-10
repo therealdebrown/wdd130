@@ -1,80 +1,143 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
-
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 :root {
---primary-color: #3498db;   
---secondary-color: #2ecc71; 
---accent-color: #e74c3c;   
---background-color: #42a1b9; 
---text-color: #2c3e50;     
-}
-
-header {
-    margin: 2px;
-}
-
-nav {
-    position: relative;
-    margin: 70px;
-    border: none;
-    background-color: rgb(183, 196, 196);
-    padding: 10px;
-    float: right;
-}
-
-nav a {
-    margin-right: 100px;
-    text-decoration: underline;
-}
-
-h1 {
-    position: absolute;
-    left: 120px;
+    --primary-color: #3498db;   /* Light blue */
+    --secondary-color: #2ecc71; /* Light green */
+    --accent-color: #e74c3c;    /* Red */
+    --background-color: #42a1b9; /* Light gray */
+    --text-color: #2c3e50;      /* Dark gray */
 }
 
 body {
     max-width: 1300px;
-    padding: 0px;
-    margin: 0px auto;  
-    background-color: antiquewhite;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
 }
 
-main {
-    max-width: 840px;
-    margin: 2px;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin: 1rem 0;
 }
 
-.box {
-    margin: 2rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #947f93;
-    color: #333;
+p {
+    color: var(--text-color);
+    margin: 1rem 0;
 }
 
-footer p {
-    margin: 1rem;
+a {
+    text-decoration: none;
+    color: var(--accent-color);
 }
 
-footer img {
-    width: 24px; 
-    height: 24px;
-    margin-left: 2rem; 
+.social-media a {
+    text-decoration: none;
 }
 
-.hero img {
-    display: block;
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 150px;
+    padding: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero .background {
     width: 100%;
-    height: auto;
-  }
+    background: url("./rafting7.jpg") no-repeat center / cover;
+    height: 867px;
+    position: relative;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero .background {
+    width: 100%;
+    background: url("./rafting7.jpg") no-repeat center / cover;
+    height: 867px;
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center accurately */
+    background-color: rgba(0, 0, 0, 0.7); /* Black transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; /* Ensure the h1 is on top of the background */
+}
+
+article {
+    position: absolute;
+    top: 50%; /* Adjust vertical positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center; /* Center items vertically */
+    z-index: 2; /* Ensure the article is on top of the background */
+}
+
+article img {
+    width: 120px; /* Same size for image and paragraph */
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 10px; /* Space between image and text */
+}
+
+article p {
+    width: 450px; /* Adjust width as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+    text-align: right; /* Align text to the left */
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
