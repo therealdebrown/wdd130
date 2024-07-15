@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <title>HTML and CSS Online Quiz</title>
+</head>
+<body>
+    <h1>HTML and CSS Online Quiz</h1>
+    <form>
+        <!-- Question 1: Text Input -->
+        <label for="q1">1. What does HTML stand for?</label>
+        <input type="text" id="q1" name="q1"><br><br>
+
+        <!-- Question 2: Textarea -->
+        <label for="q2">2. Explain the difference between inline and block elements.</label><br>
+        <textarea id="q2" name="q2" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Question 3: Select -->
+        <label for="q3">3. Which HTML tag is used to define an internal style sheet?</label>
+        <select id="q3" name="q3">
+            <option value="" selected disabled>Choose One ...</option>
+            <option value="script">&lt;script&gt;</option>
+            <option value="style">&lt;style&gt;</option>
+            <option value="link">&lt;link&gt;</option>
+        </select><br><br>
+
+        <!-- Question 4: Number Input -->
+        <label for="q4">4. How many levels of headings does HTML support?</label>
+        <input type="number" id="q4" name="q4"><br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
