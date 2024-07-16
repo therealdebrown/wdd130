@@ -1,67 +1,69 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.montserrat-uniquifier {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-
-body {
-  font-family: var(--paragraph-font);
-  max-width: 960px;
-  padding: 20px;
-  background-color: #C3A391;
-}
-
-
+/* CSS Variables */
 :root {
-  --primary-color: #4C2301;
-  --secondary-color: #FDDC89;
-  --accent1-color: #FDC05B;
-  --accent2-color: #FAAA44;
-
-  --heading-font: 'Montserrat', serif;
-  --paragraph-font: 'Montserrat', serif;
-
-  --nav-background-color: #423A24;
-  --nav-link-color: #7E9EAB;
-  --nav-hover-link-color: #0E0904;
-  --nav-hover-background-color: #19150E;
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #f9f9f9;
+    --additional-accent-color: #ccc;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+    --nav-bg-color: #333;
+    --nav-link-color: white;
+    --nav-hover-link-color: white;
+    --nav-hover-bg-color: #555;
 }
 
+/* Body styles */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #838d79;
+}
+
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
+/* Header styles */
 header {
-  padding: 20px;
-  background-color: var(--accent1-color);
+    padding: 10px 0;
+    background-color: var(--nav-bg-color);
+    color: white;
+    text-align: center;
 }
 
+header img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+/* Paragraph styles */
 p {
-  padding: 25px;
+    padding: 10px 0;
 }
 
+/* Navigation styles */
 nav {
-  background-color: var(--nav-background-color);
-  font-size: 1.2rem;
-  display: flex;
+    background-color: var(--nav-bg-color);
+    text-align: center;
 }
 
 nav a {
-  display: block;
-  color: var(--nav-link-color);
-  text-decoration: none;
-  padding: 1rem;
-}
-
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+    color: var(--nav-link-color);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 0;
+    display: inline-block;
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
+    text-decoration: underline;
 }
