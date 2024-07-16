@@ -75,9 +75,27 @@ nav a:hover {
     grid-template-columns: 1fr 3fr;
     gap: 10px;
 }
- .box img {
+
+.grid aside img {
+    width: 100%;
+    display: block;
+}
+
+.grid aside {
+    grid-column: 2;
+}
+
+.grid header {
+    grid-column: 1;
+}
+
+aside {
+    position: relative;
+}
+
+ /*.box img {
     max-width: 640px;
- }
+ }*/
 /* Footer styles */
 footer {
     background-color: var(--nav-background-color);
