@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #3498db;   /* Light blue */
+    --secondary-color: #2ecc71; /* Light green */
+    --accent-color: #e74c3c;    /* Red */
+    --background-color: #42a1b9; /* Light gray */
+    --text-color: #2c3e50;      /* Dark gray */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(133, 119, 74, 0.568);
+}
+
+header {
+    background-color: #4d9785;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-info, .employees, .contact-form {
+    margin-bottom: 30px;
+}
+
+/* Contact info styles */
+.contact-info p {
+    font-size: 18px;
+}
+
+.map {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Employee section styles */
+.employees figure {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.employees img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.employees figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact form styles */
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+/*footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 20px 0;
+    margin-top: 40px;
+    display: flex;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: center;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    flex-direction: column;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+}*/
+
+/* Footer styles */
+footer {
+    background-color: #63793bab;
+    color: rgb(7, 7, 7);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer p {
+    margin: 0;
+    margin-right: 20px; /* Add some space between the text and the images */
+    display: inline-block;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px; /* Space between the images */
+}
+
+footer a img {
+    width: 30px;
+    vertical-align: baseline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
