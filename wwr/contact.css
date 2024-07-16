@@ -63,8 +63,15 @@ h1, h2 {
     margin-top: 20px;
 }
 
+.map-iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
 /* Employee section styles */
 .employees figure {
+    display: inline-block;
     width: 30%;
     margin: 10px;
     text-align: center;
