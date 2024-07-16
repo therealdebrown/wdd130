@@ -1,116 +1,100 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent1-color: #f9f9f9;
+    --accent2-color: #ccc;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+    --nav-background-color: #333;
+    --nav-link-color: white;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #555;
 }
 
+/* General styles */
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    font-family: var(--paragraph-font);
+    padding: 20px;
     margin: 0;
-    font-size: 16px;
-    font-family: Montserrat, Arial, sans-serif;
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header styles */
+header {
+    background-color: var(--nav-background-color);
+    color: white;
+    text-align: center;
+}
+
+header img {
+    max-width: 20px;
+    vertical-align: middle;
+}
+
+/* Navigation styles */
 nav {
-    background-color: rgb(93, 105, 20);
-    padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    background-color: var(--nav-background-color);
+    padding: 10px 0;
 }
 
 nav a {
-    display: block;
-    padding: 0.5rem;
+    color: var(--nav-link-color);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #fff;
+    padding: 10px 15px;
+    display: block;
 }
 
-h1 {
-    color: steelblue;
-    padding: .5rem;
-    border-bottom: 2px solid #333;
-    margin: auto;
-}
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid rgb(32, 31, 36);
-    padding: 2px;
-    box-shadow: 0 0 30px rgb(31, 29, 29);
-    float: right;
-    margin: 4px 4px 1rem 1rem;   
+nav a:link {
+    color: var(--nav-link-color);
 }
 
-p {
-    margin: 1rem;
-    padding: 0;
+nav a:visited {
+    color: var(--nav-link-color);
 }
 
-/*div {
-    width: 400px;
-    margin: 10px;
-    border: 1px solid #000000;
-    padding: 15px;
-    background-color: #247247;
-    color: #ffffff;
-}*/
-
-aside h2 {
-    position: absolute;
-    top: 15px;
-    left: 90px;
-    color: rgb(8, 8, 8); /* Text color */
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    text-decoration: none;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-    padding: 0rem;
-}
-
-footer {
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
-/* Class Selectors */
-.box {
-    margin: 2rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #70b1ca;
-    color: #333;
-}
-
-header, footer {
-    max-width: 840px;
-    margin: 0 auto;
-}
-
+/* Main and Aside Grid styles */
 .grid {
     display: grid;
-    align-items: center;
-  }
-  
-  main {
-    grid-column: 2/3;
-    margin: 1rem;
-  }
-  
-  aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 20rem;
-    background-color: darkkhaki;
-    color: #080808;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+ .box img {
+    max-width: 640px;
+ }
+/* Footer styles */
+footer {
+    background-color: var(--nav-background-color);
+    color: white;
     text-align: center;
-  }
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+
+/* Heading styles */
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Paragraph styles */
+p {
+    padding: 10px 0;
+}
