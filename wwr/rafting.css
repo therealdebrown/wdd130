@@ -41,6 +41,7 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    border-radius: 10px;
     padding: 10px 20px;
     background-color: #bdc551;
     grid-template-columns: 110px 4fr 2fr;
@@ -74,6 +75,10 @@ header nav a {
     color: #663636;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
+}
+
+main  {
+    border-radius: 10px;
 }
 
 .hero {
@@ -188,22 +193,35 @@ section p {
     padding: 20px;
 }
 
-.footer {
-    background-color: #2bac3cb9; /* Background color for the footer */
-    padding: 10px; /* Padding around the social icons */
-    text-align: right; /* Aligns items to the right */
-  }
-  
-  .social-icons {
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: flex-end; /* Align items to the end (right side) */
-  }
-  
-  .social-icon {
-    margin-left: 10px; /* Adds space between social icons */
-  }
-  
-  .social-icon img {
-    width: 5px; /* Adjust size of the social media icons */
-    height: 5px;
-  }
+footer {
+    background-color: #63793bab;
+    color: rgb(7, 7, 7);
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer p {
+    margin: 0;
+    margin-right: 20px; /* Add some space between the text and the images */
+   display: inline-block;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px; /* Space between the images */
+}
+
+footer a img {
+    width: 30px;
+    vertical-align: baseline;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
