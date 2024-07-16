@@ -50,20 +50,35 @@ p {
 
 /* Navigation styles */
 nav {
-    background-color: var(--nav-bg-color);
-    text-align: center;
+  background-color: var(--nav-background-color);
+  text-align: center;
 }
 
 nav a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 10px 0;
-    display: inline-block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+nav a:link {
+  color: var(--nav-link-color);
+}
+
+nav a:visited {
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-bg-color);
-    text-decoration: underline;
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  text-decoration: underline;
 }
+
+
+
+
+
+
+
