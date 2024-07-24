@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent1-color: #f9f9f9;
+    --accent2-color: #ccc;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+    --nav-background-color: #333;
+    --nav-link-color: white;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #555;
+}
+
+/* General styles */
+body {
+    font-family: var(--paragraph-font);
+    padding: 20px;
+    margin: 0;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header styles */
+header {
+    background-color: var(--nav-background-color);
+    color: white;
+    text-align: center;
+}
+
+header img {
+    max-width: 20px;
+    vertical-align: middle;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-background-color);
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav a:link {
+    color: var(--nav-link-color);
+}
+
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    text-decoration: none;
+}
+
+/* Main and Aside Grid styles */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.grid aside img {
+    width: 100%;
+    display: block;
+}
+
+.grid aside {
+    grid-column: 2;
+}
+
+.grid header {
+    grid-column: 1;
+}
+
+aside {
+    position: relative;
+}
+
+ /*.box img {
+    max-width: 640px;
+ }*/
+/* Footer styles */
+footer {
+    background-color: var(--nav-background-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+
+/* Heading styles */
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Paragraph styles */
+p {
+    padding: 10px 0;
+}
